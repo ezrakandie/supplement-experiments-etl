@@ -106,7 +106,4 @@ pytest tests/
 
 ## Notes
 
-The source CSVs are not included in this repository (they are private
-exam/company data). `tests/test_merge_all_data.py` includes small synthetic
-fixtures that exercise every transformation rule, so the pipeline logic can
-be verified without the real dataset.
+The source CSV files contain proprietary data and are excluded from this public repository via `.gitignore`. The included test suite (`tests/test_merge_all_data.py`) uses synthetic data fixtures to fully validate all transformation, joining, and data-quality rules without exposing private data.
