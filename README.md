@@ -1,17 +1,17 @@
 # Supplement Experiments ETL
 
-![CI](https://github.com/<your-username>/<your-repo>/actions/workflows/ci.yml/badge.svg)
+![](https://github.com/ezrakandie/supplement-experiments-etl/actions/workflows/ci.yml/badge.svg)
 
 A data engineering pipeline that cleans and merges four disparate data
-sources — wearable/health metrics, supplement intake logs, experiment
-metadata, and user profiles — into a single, analysis-ready dataset for
+sources wearable/health metrics, supplement intake logs, experiment
+metadata, and user profiles into a single, analysis-ready dataset for
 **1001-Experiments**, a personalized-supplement company.
 
 ## Problem
 
 1001-Experiments collects data from wearables, supplement usage logs, and
 user profiles across thousands of users. Previously, analysts cross-referenced
-these sources manually and separately for every analysis — slow and
+these sources manually and separately for every analysis slow and
 error-prone. This pipeline consolidates them into one clean, daily-level
 table.
 
