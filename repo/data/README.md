@@ -1,13 +1,9 @@
-# Data
+# Data Directory
 
-The source CSVs used by this pipeline are not included in this repository,
-since they contain private data from a certification exam / company dataset.
+The raw data files (`user_health_data.csv`, `supplement_usage.csv`, `experiments.csv`, and `user_profiles.csv`) contain proprietary datasets and are excluded from version control via `.gitignore`.
 
-To run the pipeline yourself, place the following four files in this folder:
+### Testing Pipeline Logic
+To test and verify the ETL transformations, run the unit test suite:
 
-- `user_health_data.csv` — columns: `user_id, date, average_heart_rate, average_glucose, sleep_hours, activity_level`
-- `supplement_usage.csv` — columns: `user_id, date, supplement_name, dosage, dosage_unit, is_placebo, experiment_id`
-- `experiments.csv` — columns: `experiment_id, name, description`
-- `user_profiles.csv` — columns: `user_id, email, age`
-
-See the root `README.md` for the full data model and entity relationships.
+```bash
+pytest tests/
